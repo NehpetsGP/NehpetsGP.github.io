@@ -1,0 +1,8 @@
+baseURL = 'https://NehpetsGP.github.io/'
+locale = 'en-us'
+title = 'Nehpets'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

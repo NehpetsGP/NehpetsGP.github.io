@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="spacer"></div>
+{{ .Content }}
+<div class="spacer"></div>
+<div class="panel">
+  <p class="panel-title">*** what&rsquo;s here ***</p>
+  <ul>
+    <li><a href="{{ "posts" | relURL }}">posts</a> &mdash; the good stuff, in no particular order <span class="blink">NEW!</span></li>
+    <li><a href="{{ "links" | relURL }}">links</a> &mdash; interesting or helpful sites worth sharing</li>
+    <li><a href="{{ "cv" | relURL }}">cv</a> &mdash; where I&rsquo;ve worked</li>
+  </ul>
+</div>
+{{ end }}

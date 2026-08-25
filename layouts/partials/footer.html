@@ -1,0 +1,11 @@
+<footer>
+  <hr>
+  {{- $lm := .Lastmod -}}
+  {{- if $lm.IsZero -}}
+  {{- with .Site.RegularPages.ByLastmod.Reverse -}}
+  {{- $lm = (index . 0).Lastmod -}}
+  {{- end -}}
+  {{- end -}}
+  <p>last updated: {{ $lm.Format "2006-01-02" }}</p>
+  <p>&copy; {{ now.Format "2006" }} &mdash; all rights reserved</p>
+</footer>

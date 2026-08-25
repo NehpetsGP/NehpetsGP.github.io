@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 &mdash; {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+</head>
+<body>
+  <div class="terminal">
+    <div class="titlebar">
+      <span>Nehpets &mdash; page not found</span>
+      <span class="titlebar-btns">[_] [&square;] <span class="x">[X]</span></span>
+    </div>
+    <main>
+      <h2>== 404 ==</h2>
+      <p class="center">This page has fallen off the information superhighway.</p>
+      <p class="center"><a href="{{ "/" | relURL }}">[ return home ]</a></p>
+    </main>
+    <footer>
+      <hr>
+      <p>last updated: {{ now.Format "2006-01-02" }}</p>
+    </footer>
+  </div>
+</body>
+</html>

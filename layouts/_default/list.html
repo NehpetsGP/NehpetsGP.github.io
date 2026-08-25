@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="spacer-sm"></div>
+<h2>Posts</h2>
+<div class="spacer-sm"></div>
+{{ with .Description }}<p>{{ . }}</p>{{ end }}
+<ul class="post-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="dim">({{ .Date.Format "2006-01-02" }})</span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
